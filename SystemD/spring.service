@@ -1,0 +1,13 @@
+[Unit]
+Description=Sample Web Server
+After=network.target
+
+[Service]
+Environment=PORT=8888
+ExecStart=java -jar /opt/sample/service.jar
+Restart=always
+RestartSec=10
+User=github
+
+[Install]
+WantedBy=multi-user.target
