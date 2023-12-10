@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name="dmytro"
+name="anastasiia"
 
 # Знаходимо найбільший існуючий номер файлу
 max=$(ls $name* | tail -1 | sed 's/.*\(^[0-9]*\).*/\1/')
