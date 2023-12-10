@@ -7,7 +7,7 @@ Environment=PORT=8888
 ExecStart=java -jar /opt/sample/service.jar
 Restart=always
 RestartSec=10
-User=github
+User=anastasiia
 
 [Install]
 WantedBy=multi-user.target
