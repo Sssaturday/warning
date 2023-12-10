@@ -1,13 +1,15 @@
 [Unit]
-Description=Sample Web Server
-After=network.target
-
-[Service]
-Environment=PORT=8888
-ExecStart=java -jar /opt/sample/service.jar
-Restart=always
-RestartSec=10
-User=anastasiia
+Description=Server robi budlaska
+Requires=network-online.target
+After=network-online.target
 
 [Install]
 WantedBy=multi-user.target
+
+
+[Service]
+ExecStart=java -jar /opt/sample/service.jar
+Environment="PORT=8888"
+User=anastasiia
+Restart=always
+RestartSec=10
